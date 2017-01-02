@@ -165,3 +165,14 @@ tests:
       parse:
     then:
       syntax-error:
+
+  - name: Simple input object with args should fail
+    given:
+      query: |
+        type Post {
+          post/title: String
+        }
+    when:
+      parse:
+    then:
+      passes:

@@ -15,7 +15,7 @@ CommentChar ::= #"[\x{9}\x{20}-\uFFFF]"
 Comment ::= "#" CommentChar* <LineTerminator>
 Comma ::= ","
 Punctuator ::= #"[!$().:=@\[\]\{\}]"
-Name ::= #"[\/_A-Za-z][_0-9A-Za-z]*"
+Name ::= #"[_A-Za-z][\/_0-9A-Za-z]*"
 NegativeSign ::= "-"
 NonZeroDigit ::= #"[1-9]"
 Digit ::= #"[0-9]"
